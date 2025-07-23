@@ -1,0 +1,17 @@
+Clases
+EstadoAlumno ✅
+Estadoalumno ❌
+
+Tablas BD
+ESTADO_ALUMNOS ✅
+ESTADOALUMNOS ❌
+
+Variables(Lenguajes)
+$EstadoAlumno ✅
+$estado_alumno ✅
+$estadoalumno ❌
+
+Modelo de trabajo
+M->Modelo
+V->Vista
+C->Controlador 
