@@ -31,4 +31,19 @@
         echo $precio . '<br>';
     }
 
+    //ejercicio 3
+    function multiplicarArreglo($numeros, $multiplicador){
+        $resultado = []; 
+        foreach($numeros as $numero){
+            $producto = $numero * $multiplicador;
+            $resultado[] =$producto;
+        }
+        return $resultado;
+    }
+    $numerosO = [5, 8, 1, 5];
+    $multiplicador = 5;
+    $resultadoF = multiplicarArreglo($numerosO, $multiplicador);
+    foreach($resultadoF as $valor) {
+        echo 'el resoltado es: ' . $valor . '<br>';
+    }
 ?>
