@@ -69,9 +69,20 @@
             echo 'el area es: ' . $resultado;
     }
     calculaArea(5, 8);
+
     echo '<hr><strong>EJERCIO 6</strong><br>';
-    
+    function numeroPar($numero){
+        // $numero = 21;
+        if($numero % 2 == 0){
+            echo 'el numero ' . $numero . ' es par';
+        } else {
+            echo 'el numero ' . $numero . ' es impar';
+        }
+    }
+    numeroPar(0);
+
     echo '<hr><strong>EJERCIO 7</strong><br>';
+    
     echo '<hr><strong>EJERCIO 9</strong><br>';
     echo '<hr><strong>EJERCIO 9</strong><br>';
     echo '<hr><strong>EJERCIO 10</strong><br>';
