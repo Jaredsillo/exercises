@@ -1,0 +1,64 @@
+🟢 Ejercicios de funciones (sin arreglos)
+1. Función que calcula el área de un rectángulo
+Recibe dos parámetros: base y altura.
+
+Calcula el área multiplicando base por altura.
+
+Devuelve el resultado.
+
+2. Función que determina si un número es par o impar
+Recibe un número.
+
+Usa el operador módulo % para verificar si es divisible por 2.
+
+Retorna "par" o "impar" según el resultado.
+
+3. Función que convierte una temperatura de Celsius a Fahrenheit
+Recibe un valor en grados Celsius.
+
+Usa la fórmula F = (C * 9/5) + 32.
+
+Devuelve el valor en Fahrenheit.
+
+🔵 Ejercicios de arrays (sin funciones)
+1. Crear un arreglo indexado con los nombres de 5 ciudades
+Define el arreglo con 5 ciudades.
+
+Muestra la ciudad en la posición 3.
+
+Recorre el arreglo con foreach para mostrar todas las ciudades.
+
+2. Crear un arreglo asociativo con datos de una persona
+Define un arreglo con claves: nombre, edad, email.
+
+Accede y muestra el valor de email.
+
+Añade una clave nueva: ciudad.
+
+3. Crear un arreglo multidimensional con datos de estudiantes
+Cada estudiante tiene nombre, edad, y calificación.
+
+Crea al menos 3 estudiantes.
+
+Muestra el nombre y calificación del segundo estudiante.
+
+🟠 Ejercicios de funciones con arrays
+1. Función que recibe un arreglo de números y devuelve la suma total
+Recibe un arreglo.
+
+Recorre y suma todos los valores.
+
+Devuelve la suma.
+
+2. Función que recibe un arreglo asociativo con personas y edades, y devuelve el nombre de la persona más joven
+Recibe un arreglo asociativo donde cada elemento es ["nombre" => ..., "edad" => ...].
+
+Busca y devuelve el nombre con la edad más baja.
+
+3. Función que recibe un arreglo multidimensional de productos (nombre y precio) y devuelve el producto más caro
+Recibe el arreglo de productos.
+
+Compara precios para encontrar el más alto.
+
+Devuelve el nombre y precio del producto más caro.
+
