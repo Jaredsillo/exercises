@@ -1,42 +1,39 @@
 <?php
-    // ejercicio 1
-    function mostrarEdad($edad){
-        echo 'Tienes ' . $edad . ' años' .  '<br>';
-    }
-    mostrarEdad(20);
 
-    // ejercicio 2
-    function bienvenido($usuario = 'Jared'){
-        echo 'Bienvenido ' . $usuario . '<br>';
-    }
-    bienvenido();
+$peliculas = array(
+    "Pelicula1" => array(
+        "titulo" => "Forrest Gump",
+        "director" => "Robert Zemeckis",
+        "actores" => array("Tom Hanks", "Robin Wright", "Gary Sinise")
+    ),
+    "Pelicula2" => array(
+        "titulo" => "El Padrino",
+        "director" => "Francis Ford Coppola",
+        "actores" => array("Marlon Brando", "Al Pacino", "James Caan")
+    ),
+    "Pelicula3" => array(
+        "titulo" => "La La Land",
+        "director" => "Damien Chazelle",
+        "actores" => array("Ryan Gosling", "Emma Stone", "John Legend")
+    )
+);
 
-    // ejercicio 3
-    function incrementarPorValor($numero){
-        $numero += 10;
-    }
-    $numeroValor = 99;
-    incrementarPorValor($numeroValor);
-    echo $numeroValor . '<br>';
+// Acceder a la información de una película específica
+echo "Información de " . $peliculas["Pelicula2"]["titulo"] . ":\n";
+echo "  Director: " . $peliculas["Pelicula2"]["director"] . "\n";
+echo "  Actores:\n";
+foreach ($peliculas["Pelicula2"]["actores"] as $actor) {
+    echo "    - " . $actor . "\n";
+}
 
-    // ejemplo 4
-    function duplicarReferencia(& $num){
-        $num *= 2;
+// Iterar sobre todas las películas y sus actores
+echo "\nInformación de todas las películas:\n";
+foreach ($peliculas as $nombrePelicula => $datosPelicula) {
+    echo "- " . $datosPelicula["titulo"] . " (dirigida por " . $datosPelicula["director"] . "):\n";
+    echo "  Actores:\n";
+    foreach ($datosPelicula["actores"] as $actor) {
+        echo "    - " . $actor . "\n";
     }
-    $numeroMultiplicar = 50;
-    duplicarReferencia($numeroMultiplicar);
-    echo 'el resultsado es: ' . $numeroMultiplicar . '<br>';
+}
 
-    //ejercicio 5 
-    function areaRectangulo($base, $altura){
-        return $base * $altura;
-    }
-    $resultado = areaRectangulo(10, 15);
-    echo 'el area es de: ' . $resultado . '<br>';
-
-    // ejercicio 6
-    function mostrarSaludo($persona){
-        echo 'Hola ' . $persona;
-    }
-    mostrarSaludo('Mundo');
 ?>
